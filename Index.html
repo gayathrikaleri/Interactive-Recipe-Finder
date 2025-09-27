@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Recipe Finder</h1>
+        <p id="time"></p>
+        <input type="text" id="searchInput" placeholder="Search by ingredients (comma separated)...">
+        <button id="searchBtn">Search</button>
+        <div class="filters">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Side">Side</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Vegan">Vegan</option>
+            </select>
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <option value="Veg">Veg</option>
+                <option value="Non-Veg">Non-Veg</option>
+            </select>
+            <input type="number" id="maxTimeInput" placeholder="Max prep time (minutes)">
+        </div>
+        <div id="searchInfo">
+            <p id="searchStatus"></p>
+            <p id="apiUsed">API/Source Used: Local Dataset</p>
+        </div>
+    </header>
+
+    <main id="recipeContainer">
+        <p>Type ingredients and click Search to fetch recipes...</p>
+    </main>
+
+    <footer>
+        <p>Interactive Recipe Finder &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
